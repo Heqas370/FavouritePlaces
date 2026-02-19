@@ -12,6 +12,7 @@
 		66EFBC412F479E6B00AED590 /* FavouritePlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFBC3C2F479E6B00AED590 /* FavouritePlacesApp.swift */; };
 		66EFBC422F479E6B00AED590 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFBC3D2F479E6B00AED590 /* Location.swift */; };
 		66EFBC432F479E6B00AED590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EFBC3A2F479E6B00AED590 /* Assets.xcassets */; };
+		66EFBC452F47A01100AED590 /* WikiResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFBC442F47A01100AED590 /* WikiResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		66EFBC3C2F479E6B00AED590 /* FavouritePlacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePlacesApp.swift; sourceTree = "<group>"; };
 		66EFBC3D2F479E6B00AED590 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		66EFBC3E2F479E6B00AED590 /* PlaceEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceEditView.swift; sourceTree = "<group>"; };
+		66EFBC442F47A01100AED590 /* WikiResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 				66EFBC3C2F479E6B00AED590 /* FavouritePlacesApp.swift */,
 				66EFBC3D2F479E6B00AED590 /* Location.swift */,
 				66EFBC3E2F479E6B00AED590 /* PlaceEditView.swift */,
+				66EFBC442F47A01100AED590 /* WikiResults.swift */,
 				6697FFF02F44F11500AEEF34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				66EFBC402F479E6B00AED590 /* ContentView.swift in Sources */,
 				66EFBC412F479E6B00AED590 /* FavouritePlacesApp.swift in Sources */,
 				66EFBC422F479E6B00AED590 /* Location.swift in Sources */,
+				66EFBC452F47A01100AED590 /* WikiResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

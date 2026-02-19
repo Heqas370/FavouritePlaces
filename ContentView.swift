@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var selectedLocation: Location?
     
     let startPosistion = MapCameraPosition.region(MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 10, longitude: 20), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
+        center: CLLocationCoordinate2D(latitude: 50, longitude: 20), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
     )
     
     var body: some View {
@@ -44,7 +44,11 @@ struct ContentView: View {
                     }
                 }
                 .sheet(item: $selectedLocation){ location in
-                    Text(location.name)
+                    PlaceEditView(location: location) { newLocation in
+                        if let index = locations.firstIndex(of: location) {
+                            locations[index] = newLocation
+                        }
+                    }
                 }
         }
     }
