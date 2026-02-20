@@ -13,6 +13,7 @@
 		66EFBC422F479E6B00AED590 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFBC3D2F479E6B00AED590 /* Location.swift */; };
 		66EFBC432F479E6B00AED590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EFBC3A2F479E6B00AED590 /* Assets.xcassets */; };
 		66EFBC452F47A01100AED590 /* WikiResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFBC442F47A01100AED590 /* WikiResults.swift */; };
+		66FFB28F2F4884B400D111B9 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFB28E2F4884B400D111B9 /* ContentView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		66EFBC3D2F479E6B00AED590 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		66EFBC3E2F479E6B00AED590 /* PlaceEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceEditView.swift; sourceTree = "<group>"; };
 		66EFBC442F47A01100AED590 /* WikiResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResults.swift; sourceTree = "<group>"; };
+		66FFB28E2F4884B400D111B9 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				66EFBC3A2F479E6B00AED590 /* Assets.xcassets */,
+				66FFB28E2F4884B400D111B9 /* ContentView-ViewModel.swift */,
 				66EFBC3B2F479E6B00AED590 /* ContentView.swift */,
 				66EFBC3C2F479E6B00AED590 /* FavouritePlacesApp.swift */,
 				66EFBC3D2F479E6B00AED590 /* Location.swift */,
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66EFBC3F2F479E6B00AED590 /* PlaceEditView.swift in Sources */,
+				66FFB28F2F4884B400D111B9 /* ContentView-ViewModel.swift in Sources */,
 				66EFBC402F479E6B00AED590 /* ContentView.swift in Sources */,
 				66EFBC412F479E6B00AED590 /* FavouritePlacesApp.swift in Sources */,
 				66EFBC422F479E6B00AED590 /* Location.swift in Sources */,

@@ -10,18 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var locations = [Location]()
-    @State private var selectedLocation: Location?
     
     let startPosistion = MapCameraPosition.region(MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 50, longitude: 20), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
     )
     
+    @State private var viewModel = ViewModel()
+    
     var body: some View {
         
         MapReader{ map in
             Map(initialPosition: startPosistion){
-                ForEach(locations){ location in
+                ForEach(viewModel.locations){ location in
                     
                     Annotation(location.name, coordinate: location.coordinate){
                             
@@ -29,9 +29,8 @@ struct ContentView: View {
                             .resizable()
                             .foregroundColor(.red)
                             .frame(width: 40, height: 40)
-                            .padding(30)
                             .onLongPressGesture(minimumDuration: 0.1) {
-                                selectedLocation = location
+                                viewModel.selectedLocation = location
                             }
                     }
                 }
@@ -39,15 +38,12 @@ struct ContentView: View {
                 .mapStyle(.hybrid)
                 .onTapGesture { position in
                     if let coordinate = map.convert(position, from: .local){
-                        let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: coordinate.latitude, longitude: coordinate.longitude)
-                        locations.append(newLocation)
+                        viewModel.addLocation(at: coordinate)
                     }
                 }
-                .sheet(item: $selectedLocation){ location in
-                    PlaceEditView(location: location) { newLocation in
-                        if let index = locations.firstIndex(of: location) {
-                            locations[index] = newLocation
-                        }
+                .sheet(item: $viewModel.selectedLocation){ location in
+                    PlaceEditView(location: location) {
+                        viewModel.updateLocation(for: $0)
                     }
                 }
         }
